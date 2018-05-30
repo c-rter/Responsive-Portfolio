@@ -1,0 +1,222 @@
+.nav-container {
+    background: #ffffff;
+    width: 100%;
+}
+.navbar {
+    width: 960px;
+   margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ffffff;
+}
+
+li {
+    float: right;
+    border-right:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:#777777;
+}
+
+.navitems {
+    color: #18ec3b;
+}
+
+li:last-child {
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(233, 247, 246);
+}
+
+#title {
+    float: left;
+    color: #ffffff;
+    padding: 14px 16px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    color: white;
+    border-top: 5px solid #4aaaa5;
+    text-align: center;
+ }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color:#777777;
+    background-image: url('background.png');
+    background-repeat: repeat;
+  }
+
+
+  
+  .wrapper {
+    width: 960px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color:#ffffff;
+    border: 1px solid #dddddd;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    color: #4aaaa5;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    font-size: 20px;
+
+  }
+
+.imagetable{
+    display: flex;
+    justify-content: center;
+}  
+
+#imagetableid {
+    align-self: center;
+}
+
+#firstblurb {
+    border-top: 10px solid transparent;
+}
+#secondblurb {
+    border-left: 10px solid transparent;
+}
+
+#profilepic {
+    border: 10px solid transparent;
+}  
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+} 
+
+div.imagewrapper{  
+    float:left;
+    position:relative;
+    margin:5px;
+}  
+div.description{  
+    position:absolute;
+    bottom:20px;
+    left:0px;  
+    width:100%;
+    background-color:#4aaaa5;  
+    font-family: 'tahoma';  
+    text-align: center;
+    font-size:15px;  
+    color:white;  
+    opacity:0.8;
+    filter:alpha(opacity=60);
+}  
+p.description_content{  
+    padding:10px;  
+    margin:0px;  
+}  
+
+@media only screen and (min-width: 300px) {
+
+    .navbar {
+        width: 250px;
+    }
+    .wrapper {
+        width: 250px;
+        }
+        #imagetableid {
+            visibility: hidden;
+                }
+         .screenwarning {
+            visibility: visible;
+                }
+}
+
+@media only screen and (min-width: 640px) {
+
+    .navbar {
+        width: 625px;
+    }
+    .wrapper {
+        width: 625px;
+        }
+    #imagetableid {
+        visibility: visible;
+        }
+    .screenwarning {
+        visibility: hidden;
+        }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+        width: 750px;
+    }
+    .wrapper {
+        width: 750px;
+        }
+} 
+@media only screen and (min-width: 980px) {
+    .wrapper {
+    width: 600px;
+    position: relative;
+    left: -180px;
+    }
+    .navbar {
+        width: 960px;
+    }
+    .focusimage{
+        height:166px;
+        width:250px;
+    }
+} 
+
